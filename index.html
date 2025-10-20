@@ -252,6 +252,35 @@
             color: #333;
         }
 
+        .disclaimer {
+            background: #FFF9E6;
+            border-left: 4px solid #E6CD0C;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .disclaimer-icon {
+            font-size: 28px;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+
+        .disclaimer-text {
+            flex: 1;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .disclaimer-text strong {
+            color: #333;
+            font-size: 15px;
+        }
+
         .footer {
             background: #f8f8f8;
             padding: 30px;
@@ -415,6 +444,25 @@
             .footer {
                 padding: 20px 16px;
                 font-size: 13px;
+            }
+
+            .disclaimer {
+                padding: 16px;
+                margin: 20px 0;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .disclaimer-icon {
+                font-size: 24px;
+            }
+
+            .disclaimer-text {
+                font-size: 13px;
+            }
+
+            .disclaimer-text strong {
+                font-size: 14px;
             }
 
             .section-header {
@@ -862,6 +910,15 @@
                 </div>
             </div>
 
+            <!-- Дисклеймер -->
+            <div class="disclaimer">
+                <div class="disclaimer-icon">💡</div>
+                <div class="disclaimer-text">
+                    <strong>Важное уточнение:</strong><br>
+                    Чек-лист помогает оценить потенциал гипотезы, но не гарантирует успех. Реальный результат зависит от специфики вашей компании, команды и множества уникальных факторов.
+                </div>
+            </div>
+
             <!-- Кнопки -->
             <div class="buttons">
                 <button class="btn btn-primary" onclick="evaluateHypothesis()">Оценить гипотезу</button>
@@ -873,8 +930,8 @@
         </div>
 
         <div class="footer">
-            Чек-лист собрала участница 2-го потока курса <a href="https://runetlex-academy.ru/neuralnetworks" target="_blank">«Нейросети: базовые навыки юриста»</a> и член сообщества <a href="https://t.me/docsllm" target="_blank">Нейросети | ilovedocs</a> Марина Джатэ.<br>
-            Автор методологии: <a href="https://drive.google.com/file/d/1IVICVrT_mkUodJrO9j9HWkmbbM59qhp2/view?usp=sharing" target="_blank">Павел Мищенко</a>.
+            Чек-лист собрала Марина Джатэ, участница 2-го потока курса <a href="https://runetlex-academy.ru/neuralnetworks" target="_blank">«Нейросети: базовые навыки юриста»</a> и член сообщества <a href="https://t.me/docsllm" target="_blank">Нейросети | ilovedocs</a>.<br>
+            Автор <a href="https://drive.google.com/file/d/1IVICVrT_mkUodJrO9j9HWkmbbM59qhp2/view?usp=sharing" target="_blank">методологии</a>: Павел Мищенко.
         </div>
     </div>
 
